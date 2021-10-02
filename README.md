@@ -95,6 +95,4 @@
 
 此外只是简单适配`2.x`. 本质上`taro-hooks`的设计定位为`3.x`. 故不会分太大的心力在`2.x`中, 使用者需注意. 若有问题请提`issue`至主仓库. 
 
-[h5 在线 demo](https://taro-hooks.github.io/taro-hooks-demo-for-taro2.x/)
-
-![screenshot](https://cdn.jsdelivr.net/gh/innocces/DrawingBed/2021-10-03/1633196112926-2.x.png)
+![screenshot](https://cdn.jsdelivr.net/gh/innocces/DrawingBed/2021-10-03/1633199161091-use.gif)
