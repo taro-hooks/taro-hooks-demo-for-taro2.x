@@ -83,5 +83,8 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/taro-hooks/taro-hooks-demo-for-taro2.x"
+  },
+  "engines": {
+    "node": ">=12.x"
   }
 }
