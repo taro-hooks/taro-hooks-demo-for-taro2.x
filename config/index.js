@@ -107,6 +107,14 @@ const config = {
         },
       });
     },
+    ...(process.env.TARGET === "GH"
+      ? {
+          router: {
+            mode: "hash",
+            basename: "/taro-hooks-demo-for-taro2.x",
+          },
+        }
+      : {}),
   },
 };
 

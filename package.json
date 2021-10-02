@@ -1,5 +1,5 @@
 {
-  "name": "taro-hooks 2.x demo",
+  "name": "taro-hooks-2.x-demo",
   "version": "1.0.0",
   "private": true,
   "description": "taro-hooks 2.x demo",
@@ -9,6 +9,7 @@
     "css": "less"
   },
   "scripts": {
+    "build:gh": "cross-env TARGET=GH npm run build:h5",
     "build:weapp": "taro build --type weapp",
     "build:swan": "taro build --type swan",
     "build:alipay": "taro build --type alipay",
@@ -67,6 +68,7 @@
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-plugin-transform-runtime": "^6.23.0",
     "babel-preset-env": "^1.6.1",
+    "cross-env": "^7.0.3",
     "eslint": "^5.16.0",
     "eslint-config-taro": "2.2.17",
     "eslint-plugin-import": "^2.12.0",
