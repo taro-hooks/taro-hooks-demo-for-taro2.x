@@ -9,6 +9,9 @@ jobs:
   deploy:
     runs-on: ubuntu-18.04
     steps:
+      - uses: actions/setup-node@v2
+        with:
+          node-version: "12"
       - uses: actions/checkout@v2
       - run: node -v
       - run: npm i
