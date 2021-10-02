@@ -61,6 +61,34 @@
     }
     ```
 
+3. 需要手动配置按需加载
+  - 需下载`babel-plugin-import`
+
+    ```bash
+    $ npm i babel-plugin-import -D
+    ```
+
+  - 配置
+
+    ```javascript
+    // config/index.js
+    const config = {
+      // ...
+      plugins: [
+        // ...
+        [
+          "import",
+          {
+            libraryName: "taro-hooks",
+            camel2DashComponentName: false,
+          },
+          "taro-hooks",
+        ],
+      ],
+      // ...
+    }
+    ```
+
 以上即可在`2.x`版本中使用`taro-hooks`了。但是部分`taro-hooks`补齐的用到的`dom`层面的`hooks`依然无法使用(如: `useImage`在`h5`端的`compress`). 希望大家注意！   
 
 这只是一种解决方式, 若大家还有其他解决方式可寻求最佳解决方式    
